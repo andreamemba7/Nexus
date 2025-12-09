@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+    <source src="assets/bg.mp4" type="video/mp4">
+</video>
+
+<!-- Contact Container -->
+<div class="contact-container glass">
+    <h1 class="contact-title">Contact Me</h1>
+    <p> Email: a.memba@alustudent.com</p>
+    <p> Phone number: +23054574703</p>
+    <p> github: <a href="https://github.com/andreamemba7">https://github.com/andreamemba7</a></p>
+    <br>
+    <p class="contact-sub">Feel free to reach out for questions, collabs, or support.</p>
+    <br>
+
+    <form class="contact-form" id="contactForm">
+        <label>Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+</div>
+
+<!-- Floating Navigation Button -->
+<div class="nav-circle" id="navToggle">☰</div>
+
+<!-- Navigation Menu -->
+<div class="nav-menu hidden" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="result.html">Results</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

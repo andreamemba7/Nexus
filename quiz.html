@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+    <source src="assets/bg.mp4" type="video/mp4">
+</video>
+
+<!-- Quiz Container -->
+<div class="quiz-container glass">
+    <h1 class="quiz-title">Specialisation Quiz</h1>
+    <p class="quiz-sub">Answer the following questions to discover your BSE specialisation fit.</p>
+
+    <form id="quizForm">
+        <!-- Q1 -->
+        <div class="question-block">
+            <label>1. Which activity do you enjoy the most?</label>
+            <select name="q1" required>
+                <option value="">-- Select an option --</option>
+                <option value="low">Building hardware or writing system-level code</option>
+                <option value="arvr">Imagining immersive digital worlds</option>
+                <option value="full">Designing and building websites</option>
+                <option value="ml">Solving problems using data</option>
+            </select>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question-block">
+            <label>2. Which tool sounds most exciting to you?</label>
+            <select name="q2" required>
+                <option value="">-- Select an option --</option>
+                <option value="low">Compilers / Microcontrollers</option>
+                <option value="arvr">Unity / Unreal Engine</option>
+                <option value="full">VS Code / Figma</option>
+                <option value="ml">Python / Jupyter Notebook</option>
+            </select>
+        </div>
+
+        <!-- Q3 -->
+        <div class="question-block">
+            <label>3. Which problem do you like solving?</label>
+            <select name="q3" required>
+                <option value="">-- Select an option --</option>
+                <option value="low">Optimizing system performance</option>
+                <option value="arvr">Creating interactive experiences</option>
+                <option value="full">Improving website usability</option>
+                <option value="ml">Predicting outcomes from data</option>
+            </select>
+        </div>
+
+        <!-- Q4 -->
+        <div class="question-block">
+            <label>4. What kind of project would you prefer?</label>
+            <select name="q4" required>
+                <option value="">-- Select an option --</option>
+                <option value="low">Embedded systems or IoT devices</option>
+                <option value="arvr">VR/AR applications</option>
+                <option value="full">Web applications or apps</option>
+                <option value="ml">Data analytics or AI projects</option>
+            </select>
+        </div>
+
+        <!-- Q5 -->
+        <div class="question-block">
+            <label>5. Which subject excites you the most?</label>
+            <select name="q5" required>
+                <option value="">-- Select an option --</option>
+                <option value="low">Computer Architecture / Electronics</option>
+                <option value="arvr">3D Modelling / Game Design</option>
+                <option value="full">UI/UX / Frontend Development</option>
+                <option value="ml">Statistics / Machine Learning</option>
+            </select>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question-block">
+            <label>6. How do you approach problems?</label>
+            <select name="q6" required>
+                <option value="">-- Select an option --</option>
+                <option value="low">By understanding hardware and low-level systems</option>
+                <option value="arvr">By visualizing creative solutions</option>
+                <option value="full">By designing intuitive interfaces</option>
+                <option value="ml">By analyzing data patterns</option>
+            </select>
+        </div>
+
+        <!-- Q7 -->
+        <div class="question-block">
+            <label>7. Which type of work environment do you prefer?</label>
+            <select name="q7" required>
+                <option value="">-- Select an option --</option>
+                <option value="low">Lab or hardware-focused environment</option>
+                <option value="arvr">Creative studios or immersive spaces</option>
+                <option value="full">Collaborative web or app teams</option>
+                <option value="ml">Data labs or research teams</option>
+            </select>
+        </div>
+
+        <!-- Q8 -->
+        <div class="question-block">
+            <label>8. What would you like to be known for?</label>
+            <select name="q8" required>
+                <option value="">-- Select an option --</option>
+                <option value="low">Building efficient systems</option>
+                <option value="arvr">Creating amazing virtual worlds</option>
+                <option value="full">Designing beautiful and usable websites</option>
+                <option value="ml">Making smart decisions with data</option>
+            </select>
+        </div>
+
+        <button type="submit" class="submit-btn">See My Results</button>
+    </form>
+</div>
+
+<!-- Floating Navigation Button -->
+<div class="nav-circle" id="navToggle">☰</div>
+
+<!-- Navigation Menu -->
+<div class="nav-menu hidden" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="result.html">Results</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

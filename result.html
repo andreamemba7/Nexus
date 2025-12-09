@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Your Result</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Background Video -->
+<video autoplay muted loop id="bg-video">
+    <source src="assets/bg.mp4" type="video/mp4">
+</video>
+
+<!-- Result Container -->
+<div class="result-container glass">
+    <h1 class="result-title">Your Specialisation Match</h1>
+
+    <div id="resultBox" class="result-box">
+        <!-- Filled dynamically by script.js -->
+        <h2 id="specialisationName"></h2>
+        <p id="specialisationDescription"></p>
+        <ul id="nextSteps"></ul>
+    </div>
+
+    <a href="quiz.html" class="retry-btn">Take Quiz Again</a>
+</div>
+
+<!-- Floating Navigation Button -->
+<div class="nav-circle" id="navToggle">☰</div>
+
+<!-- Navigation Menu -->
+<div class="nav-menu hidden" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="result.html">Results</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
